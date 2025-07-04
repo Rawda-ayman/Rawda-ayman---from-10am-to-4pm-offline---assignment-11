@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/bb90bd2476.js" crossorigin="anonymous"></script>
+    <title>Weather</title>
+</head>
+<body> 
+
+
+<nav class="navbar navbar-expand-lg nav-bg"> 
+  <div class="container">
+     <a class="navbar-brand d-flex" href="./index.html"> 
+            <div>
+               <i class="fa-solid fa-cloud fs-1 text-info pe-3"></i> 
+            </div>
+            <div>
+               <h5 class="fs-6 text-white mt-4"> Weather </h5>
+            </div> 
+      </a> 
+
+    <button class="navbar-toggler border-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4"> 
+        <li class="nav-item">
+          <a class="nav-link active text-info" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="./index.html">News</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-white" href="./index.html">Live Cameras</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link text-white" href="./index.html">Photos</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./index.html">Contact</a> 
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<main>
+   <div class="bg-image overflow-hidden">  
+    
+   <div class="container mt-5">
+
+    <div>
+       <input type="text" name="user-location" class="nav-bg rounded-pill w-100 input-height text-white" maxlength="50" placeholder="  Find your Location..." oninput="displaycitiesweather(this.value)"/>
+    </div>
+
+     <div class="row p-5"> 
+        <div class="col-md-4"> 
+            <div>
+
+               <div class="p-2 d-flex justify-content-between colors text-secondary" > 
+
+                  <div> 
+                    <h5>day</h5> 
+                  </div>
+                   <div> 
+                    <h5>date</h5> 
+                  </div>
+                  
+               </div>
+
+               <div class="div-color ps-3">
+                 <h3 class="text-white">City</h3>
+                <h1 class="text-white">Temperature</h1>
+                <div class="pt-2">
+                  <i class="fa-solid fa-sun icon-properties"></i> 
+                </div> 
+                <h5 class="text-info fs-4">Sunny</h5>  
+                <div class="d-flex gap-5 text-secondary ">  
+                  <div class="ms-2 d-flex justify-content-center align-items-center gap-1">
+                    <div>
+                      <i class="fa-solid fa-umbrella"></i>
+                    </div>
+                    <div>
+                      <h6>20%</h6>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center gap-1">
+                    <div>
+                     <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <div>
+                      <h6>18km/h</h6>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center gap-1">
+                    <div>
+                     <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div>
+                      <h6>East</h6>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <div class="p-1 text-secondary  div-color">
+              <h5 class="text-center">Day</h5>
+            </div>
+            <div class="text-center div-properties mid-div-color">  
+              <i class="fa-solid fa-sun icon-properties"></i>
+               <h2 class="text-white">40.0</h2>
+               <h6 class="text-secondary ">20.4</h6>
+               <h5 class="text-info">Sunny</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <div class="p-2 colors text-secondary ">
+              <h5 class="text-center">Day</h5>
+            </div>
+            <div class="text-center div-properties div-color">  
+              <i class="fa-solid fa-sun icon-properties"></i>
+               <h2 class="text-white">40.0</h2>
+               <h6 class="text-secondary ">20.4</h6>
+               <h5 class="text-info">Sunny</h5>
+            </div>
+          </div>
+        </div>
+     </div>  
+ 
+  </div> 
+
+   </div>
+</main> 
+
+<footer> 
+
+  <div class="container overflow-hidden"> 
+     <div class="row pt-3"> 
+       <div class="col-md-6">
+        <div>
+          <form class="d-flex justify-content-center align-items-center gap-2  p-4">  
+            <input type="email" name="user-data" class="nav-bg rounded-pill w-75 input-height text-white" maxlength="50" placeholder=" enter your email to subscribe..."/>
+            <button type="submit" class="text-white bg-info button-shape">
+              <h6 class="text-center"> 
+                Subscribe
+              </h6>
+              </button>
+          </form>
+          
+        </div>
+       </div>   
+       <div class="col-md-6 d-flex justify-content-center align-items-center gap-2 icons">
+        <div> 
+          <a href="https://www.facebook.com"> 
+           <i class="fa-brands fa-facebook colors rounded-circle p-2"></i>
+          </a>
+        </div>
+        <div> 
+          <a href="https://www.twitter.com"> 
+            <i class="fa-brands fa-twitter colors rounded-circle p-2"></i>
+          </a>
+        </div>
+        <div> 
+          <a href="https://www.google.com"> 
+            <i class="fa-brands fa-google colors rounded-circle p-2"></i>
+          </a>
+        </div>
+        <div>  
+          <a href="https://www.pinterest.com">
+            <i class="fa-brands fa-pinterest-p colors rounded-circle p-2"></i>
+          </a>
+          
+        </div>
+       </div>  
+      </div> 
+     
+      <div class="row">
+        <div class="col-12">
+          <p class="text-secondary">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+  </div>
+  
+   
+</footer>
+ 
+
+    <script src="./JS/javascript.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

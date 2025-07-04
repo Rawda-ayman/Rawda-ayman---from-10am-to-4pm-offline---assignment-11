@@ -1,0 +1,71 @@
+:root
+{
+    --color:  rgb(33, 33, 61);
+}
+.nav-bg
+{
+    background-color:var(--color);
+} 
+body
+{
+   line-height:80px; 
+}
+.bg-image
+{
+    background-image: url(../images/banner.png);
+    background-size:cover;  
+}
+.input-height
+{
+   height: 55px;  
+}
+input:focus-visible
+{
+    outline: none;
+}
+.icon-properties
+{
+   font-size: 50px;
+   color: gold;
+}
+.div-properties
+{
+    padding: 58px;
+}
+.div-color
+{
+    background-color: var(--color);
+}
+.mid-div-color
+{
+    background-color: rgb(52, 52, 83);
+}
+.colors
+{
+    background-color:  rgb(58, 58, 88);
+}
+footer
+{
+    background-color: var(--color);
+}
+.button-shape
+{ 
+    border: 2px solid rgb(99, 167, 255);   
+    border-radius:50px;
+    width: 115px;
+    height: 50px;
+} 
+.icons
+{
+    font-size: 30px;
+} 
+footer i
+{   
+    color: rgb(99, 167, 255) ; 
+    transition: all 1s;
+}
+footer i:hover 
+{
+    background-color: rgb(99, 167, 255); 
+    color:white;  
+}
